@@ -1,0 +1,8 @@
+{
+  "version": "indpendent",
+  "npmClient": "yarn",
+  "packages": [
+    "packages/*",
+    "services/*"
+  ]
+}

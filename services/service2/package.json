@@ -1,0 +1,19 @@
+{
+  "name": "service2",
+  "version": "0.0.1",
+  "main": "handler.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "serverless offline --httpPort 3002 --lambdaPort 4002",
+    "test": "serverless-bundle test"
+  },
+  "devDependencies": {
+    "serverless-bundle": "^5.2.0",
+    "serverless-offline": "^12.0.4",
+    "typescript": "^4.5.0"
+  },
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.119",
+    "node-fetch": "^3.3.2"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "serverless-lerna-yarn-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "deploy-dev": "sls deploy --stage dev",
+    "deploy-lab": " sls deploy --stage laboratory",
+    "deploy-staging": "sls deploy --stage staging",
+    "deploy-prod": "sls deploy --stage prod",
+    "dev": "lerna run dev --stream",
+    "test": "lerna run test"
+  },
+  "devDependencies": {
+    "@serverless/compose": "^1.3.0",
+    "lerna": "^7.1.5",
+    "typescript": "^4.5.0"
+  }
+}
