@@ -13,7 +13,8 @@
     "deploy-lab": " sls deploy --stage laboratory",
     "deploy-staging": "sls deploy --stage staging",
     "deploy-prod": "sls deploy --stage prod",
-    "dev": "lerna run dev --stream",
+    "build": "lerna run build",
+    "dev": "yarn build && lerna run dev --stream",
     "test": "lerna run test"
   },
   "devDependencies": {
